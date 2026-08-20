@@ -14,6 +14,43 @@ from typing import Any
 import psutil
 
 
+def _format_address_family(
+    family: Any,
+) -> str:
+    """
+    Convert a socket address family to a readable name.
+    """
+
+    family_value = str(family)
+
+    if family_value == "2":
+        return "IPv4"
+
+    if family_value == "23":
+        return "IPv6"
+
+    if family == psutil.AF_LINK:
+        return "MAC"
+
+    return family_value
+
+
+def _format_connection_type(
+    connection_type: Any,
+) -> str:
+    """
+    Convert a socket type to a readable protocol name.
+    """
+
+    if connection_type == 1:
+        return "TCP"
+
+    if connection_type == 2:
+        return "UDP"
+
+    return str(connection_type)
+
+
 def _get_interfaces() -> list[dict[str, Any]]:
     """
     Collect information about available network interfaces.
@@ -24,13 +61,20 @@ def _get_interfaces() -> list[dict[str, Any]]:
 
     interfaces: list[dict[str, Any]] = []
 
-    addresses = psutil.net_if_addrs()
-    statistics = psutil.net_if_stats()
+    try:
+        addresses = psutil.net_if_addrs()
+        statistics = psutil.net_if_stats()
+
+    except (
+        psutil.AccessDenied,
+        OSError,
+    ):
+        return interfaces
 
     for interface_name, interface_addresses in addresses.items():
         stats = statistics.get(interface_name)
 
-        interface_information = {
+        interface_information: dict[str, Any] = {
             "name": interface_name,
             "is_up": stats.isup if stats else None,
             "speed_mbps": stats.speed if stats else None,
@@ -39,16 +83,22 @@ def _get_interfaces() -> list[dict[str, Any]]:
         }
 
         for address in interface_addresses:
-            interface_information["addresses"].append(
+            interface_information[
+                "addresses"
+            ].append(
                 {
-                    "family": str(address.family),
+                    "family": _format_address_family(
+                        address.family
+                    ),
                     "address": address.address,
                     "netmask": address.netmask,
                     "broadcast": address.broadcast,
                 }
             )
 
-        interfaces.append(interface_information)
+        interfaces.append(
+            interface_information
+        )
 
     interfaces.sort(
         key=lambda item: item["name"].lower()
@@ -72,7 +122,10 @@ def _get_connections() -> list[dict[str, Any]]:
             kind="inet"
         )
 
-    except psutil.AccessDenied:
+    except (
+        psutil.AccessDenied,
+        OSError,
+    ):
         return connections
 
     for connection in network_connections:
@@ -93,8 +146,12 @@ def _get_connections() -> list[dict[str, Any]]:
 
         connections.append(
             {
-                "family": str(connection.family),
-                "type": str(connection.type),
+                "family": _format_address_family(
+                    connection.family
+                ),
+                "protocol": _format_connection_type(
+                    connection.type
+                ),
                 "status": connection.status,
                 "local_address": local_address,
                 "remote_address": remote_address,
@@ -104,7 +161,9 @@ def _get_connections() -> list[dict[str, Any]]:
 
     connections.sort(
         key=lambda item: (
-            item["pid"] if item["pid"] is not None else -1,
+            item["pid"]
+            if item["pid"] is not None
+            else -1,
             item["status"] or "",
         )
     )
@@ -121,7 +180,9 @@ def collect_network() -> dict[str, Any]:
         and network information.
     """
 
-    collected_at = datetime.now(timezone.utc).isoformat()
+    collected_at = datetime.now(
+        timezone.utc
+    ).isoformat()
 
     interfaces = _get_interfaces()
     connections = _get_connections()

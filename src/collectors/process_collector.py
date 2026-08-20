@@ -13,46 +13,20 @@ from typing import Any
 import psutil
 
 
-def _get_process_information(process: psutil.Process) -> dict[str, Any] | None:
-    """
-    Collect information about a single process.
-
-    Returns:
-        A dictionary containing process information, or None if
-        the process cannot be accessed.
-    """
-
-    try:
-        information = process.as_dict(
-            attrs=[
-                "pid",
-                "name",
-                "exe",
-                "username",
-                "ppid",
-                "create_time",
-            ],
-            ad_value=None,
-        )
-
-        return {
-            "pid": information["pid"],
-            "name": information["name"],
-            "path": information["exe"],
-            "username": information["username"],
-            "parent_pid": information["ppid"],
-            "create_time": _format_timestamp(information["create_time"]),
-        }
-
-    except (
-        psutil.NoSuchProcess,
-        psutil.AccessDenied,
-        psutil.ZombieProcess,
-    ):
-        return None
+PROCESS_ATTRIBUTES = [
+    "pid",
+    "name",
+    "exe",
+    "username",
+    "ppid",
+    "create_time",
+    "status",
+]
 
 
-def _format_timestamp(timestamp: float | None) -> str | None:
+def _format_timestamp(
+    timestamp: float | None,
+) -> str | None:
     """
     Convert a valid Unix timestamp to an ISO 8601 UTC timestamp.
 
@@ -68,8 +42,47 @@ def _format_timestamp(timestamp: float | None) -> str | None:
             tz=timezone.utc,
         ).isoformat()
 
-    except (OverflowError, OSError, ValueError):
+    except (
+        OverflowError,
+        OSError,
+        ValueError,
+    ):
         return None
+
+
+def _get_process_information(
+    process: psutil.Process,
+) -> dict[str, Any] | None:
+    """
+    Collect information about a single process.
+
+    Returns:
+        A normalized process record, or None if the process
+        cannot be accessed.
+    """
+
+    try:
+        information = process.info
+
+        return {
+            "pid": information.get("pid"),
+            "name": information.get("name"),
+            "path": information.get("exe"),
+            "username": information.get("username"),
+            "parent_pid": information.get("ppid"),
+            "status": information.get("status"),
+            "create_time": _format_timestamp(
+                information.get("create_time")
+            ),
+        }
+
+    except (
+        psutil.NoSuchProcess,
+        psutil.AccessDenied,
+        psutil.ZombieProcess,
+    ):
+        return None
+
 
 def collect_processes() -> dict[str, Any]:
     """
@@ -82,16 +95,32 @@ def collect_processes() -> dict[str, Any]:
         - process records
     """
 
-    collected_at = datetime.now(timezone.utc).isoformat()
+    collected_at = datetime.now(
+        timezone.utc
+    ).isoformat()
+
     processes: list[dict[str, Any]] = []
 
-    for process in psutil.process_iter():
-        process_information = _get_process_information(process)
+    for process in psutil.process_iter(
+        attrs=PROCESS_ATTRIBUTES,
+        ad_value=None,
+    ):
+        process_information = _get_process_information(
+            process
+        )
 
         if process_information is not None:
-            processes.append(process_information)
+            processes.append(
+                process_information
+            )
 
-    processes.sort(key=lambda item: item["pid"])
+    processes.sort(
+        key=lambda item: (
+            item["pid"]
+            if item["pid"] is not None
+            else -1
+        )
+    )
 
     return {
         "collector": "process_collector",

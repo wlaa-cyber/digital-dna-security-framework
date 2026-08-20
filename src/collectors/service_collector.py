@@ -14,7 +14,7 @@ import psutil
 
 
 def _get_service_information(
-    service: psutil.win_service_get,
+    service: Any,
 ) -> dict[str, Any] | None:
     """
     Collect and normalize information about a single Windows service.
@@ -36,6 +36,9 @@ def _get_service_information(
             "start_type": information.get("start_type"),
             "description": information.get("description"),
             "binpath": information.get("binpath"),
+            "dependencies": information.get(
+                "dependencies"
+            ),
         }
 
     except (
@@ -55,17 +58,35 @@ def collect_services() -> dict[str, Any]:
         the number of collected services, and service records.
     """
 
-    collected_at = datetime.now(timezone.utc).isoformat()
+    collected_at = datetime.now(
+        timezone.utc
+    ).isoformat()
+
     services: list[dict[str, Any]] = []
 
-    for service in psutil.win_service_iter():
-        service_information = _get_service_information(service)
+    try:
+        service_iterator = psutil.win_service_iter()
 
-        if service_information is not None:
-            services.append(service_information)
+        for service in service_iterator:
+            service_information = (
+                _get_service_information(service)
+            )
+
+            if service_information is not None:
+                services.append(
+                    service_information
+                )
+
+    except (
+        psutil.NoSuchProcess,
+        psutil.AccessDenied,
+    ):
+        pass
 
     services.sort(
-        key=lambda item: (item["name"] or "").lower()
+        key=lambda item: (
+            item["name"] or ""
+        ).lower()
     )
 
     return {
