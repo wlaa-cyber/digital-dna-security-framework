@@ -11,6 +11,48 @@ Digital DNA Security Framework.
 from typing import Any
 
 
+def _normalize_address_family(value: Any) -> Any:
+    """
+    Normalize network address family representations.
+    """
+    family_mapping = {
+        "-1": "MAC",
+        2: "IPv4",
+        "2": "IPv4",
+        23: "IPv6",
+        "23": "IPv6",
+    }
+
+    return family_mapping.get(value, value)
+
+
+def _normalize_protocol(connection: dict[str, Any]) -> dict[str, Any]:
+    """
+    Normalize network protocol representations.
+
+    Converts legacy numeric connection types into protocol names
+    while preserving all other connection properties.
+    """
+    normalized = connection.copy()
+
+    protocol_mapping = {
+        1: "TCP",
+        "1": "TCP",
+        2: "UDP",
+        "2": "UDP",
+    }
+
+    if not normalized.get("protocol"):
+        connection_type = normalized.get("type")
+
+        if connection_type in protocol_mapping:
+            normalized["protocol"] = protocol_mapping[connection_type]
+
+    normalized.pop("type", None)
+
+    return normalized
+
+
 def _create_entity(
     entity_type: str,
     entity_id: str,
@@ -279,10 +321,22 @@ def _normalize_network_interfaces(
         if not name:
             continue
 
+        normalized_interface = interface.copy()
+        normalized_addresses = []
+
+        for address in interface.get("addresses", []):
+            normalized_address = address.copy()
+            normalized_address["family"] = _normalize_address_family(
+                normalized_address.get("family")
+            )
+            normalized_addresses.append(normalized_address)
+
+        normalized_interface["addresses"] = normalized_addresses
+
         entity = _create_entity(
             entity_type="network_interface",
             entity_id=f"network_interface:{name.lower()}",
-            properties=interface,
+            properties=normalized_interface,
         )
 
         entities.append(entity)
@@ -300,9 +354,15 @@ def _normalize_network_connections(
     entities = []
 
     for index, connection in enumerate(connections):
-        pid = connection.get("pid")
-        local_address = connection.get("local_address")
-        remote_address = connection.get("remote_address")
+        normalized_connection = _normalize_protocol(connection)
+
+        normalized_connection["family"] = _normalize_address_family(
+            normalized_connection.get("family")
+        )
+
+        pid = normalized_connection.get("pid")
+        local_address = normalized_connection.get("local_address")
+        remote_address = normalized_connection.get("remote_address")
 
         entity_id = (
             f"network_connection:{pid}:"
@@ -312,7 +372,7 @@ def _normalize_network_connections(
         entity = _create_entity(
             entity_type="network_connection",
             entity_id=entity_id,
-            properties=connection,
+            properties=normalized_connection,
         )
 
         entities.append(entity)
