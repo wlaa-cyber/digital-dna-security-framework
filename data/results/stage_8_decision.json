@@ -1,0 +1,5568 @@
+{
+  "stage": "stage_8",
+  "structural_result": {
+    "node_similarity": 0.8478561549100968,
+    "edge_similarity": 0.7309417040358744,
+    "structural_similarity": 0.7660160392981411,
+    "weights": {
+      "node_weight": 0.3,
+      "edge_weight": 0.7
+    }
+  },
+  "context_result": {
+    "context_consistency": 1.0,
+    "correlated_unit_count": 135,
+    "evaluated_unit_count": 97,
+    "context_coverage": 0.7185185185185186,
+    "average_unit_context_score": 1.0,
+    "unit_evaluations": [
+      {
+        "node_id": "process:1320",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "WINDOWS_SYSTEM"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:1772",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "WINDOWS_SYSTEM"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:1812",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "USER_PROFILE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2412",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PROGRAM_DATA"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2428",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "WINDOWS_SYSTEM"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:4264",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PROGRAM_DATA"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:4340",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "USER_PROFILE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:6000",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "WINDOWS_SYSTEM"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:8300",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 3,
+        "unknown_dimension_count": 3,
+        "consistent_dimension_count": 3,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "VALID"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PROGRAM_DATA"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2432",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:6188",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:7124",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:7452",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:8364",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "digital_signature:c:\\programdata\\microsoft\\windows defender\\platform\\4.18.26070.9-0\\mpdefendercoreservice.exe",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PROGRAM_DATA"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "digital_signature:c:\\programdata\\microsoft\\windows defender\\platform\\4.18.26070.9-0\\msmpeng.exe",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PROGRAM_DATA"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "digital_signature:c:\\programdata\\microsoft\\windows defender\\platform\\4.18.26070.9-0\\nissrv.exe",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PROGRAM_DATA"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "digital_signature:c:\\windows\\system32\\mousocoreworker.exe",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "WINDOWS_SYSTEM"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "installed_application:microsoft edge:151.0.4129.93",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 2,
+        "unknown_dimension_count": 4,
+        "consistent_dimension_count": 2,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:0:{'ip': '192.168.104.132', 'port': 62598}:{'ip': '134.33.4.17', 'port': 443}:1",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:0:{'ip': '192.168.104.132', 'port': 62612}:{'ip': '20.165.94.54', 'port': 443}:0",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:1168:{'ip': '0.0.0.0', 'port': 49667}:None:15",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:1168:{'ip': '::', 'port': 49667}:None:16",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:1268:{'ip': '0.0.0.0', 'port': 49666}:None:18",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:1268:{'ip': '::', 'port': 49666}:None:17",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2080:{'ip': '127.0.0.1', 'port': 52051}:None:19",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2128:{'ip': '0.0.0.0', 'port': 5353}:None:21",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2128:{'ip': '0.0.0.0', 'port': 5355}:None:22",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2128:{'ip': '::', 'port': 5353}:None:20",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2128:{'ip': '::', 'port': 5355}:None:23",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2208:{'ip': '192.168.104.132', 'port': 54194}:{'ip': '4.213.25.241', 'port': 443}:24",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:2452:{'ip': '::', 'port': 49668}:None:26",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:3992:{'ip': '127.0.0.1', 'port': 1900}:None:32",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:3992:{'ip': '192.168.104.132', 'port': 1900}:None:27",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:3992:{'ip': '::1', 'port': 1900}:None:33",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:3992:{'ip': '::1', 'port': 51595}:None:31",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:3992:{'ip': 'fe80::681f:e958:c1a4:70d9', 'port': 1900}:None:34",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:4:{'ip': '0.0.0.0', 'port': 445}:None:3",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:4:{'ip': '192.168.104.132', 'port': 137}:None:5",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:4:{'ip': '192.168.104.132', 'port': 138}:None:6",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:4:{'ip': '192.168.104.132', 'port': 139}:None:4",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:4:{'ip': '::', 'port': 445}:None:2",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:5060:{'ip': '0.0.0.0', 'port': 5353}:None:36",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:5060:{'ip': '::', 'port': 5353}:None:35",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:5372:{'ip': '0.0.0.0', 'port': 5040}:None:37",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:5372:{'ip': '0.0.0.0', 'port': 5050}:None:38",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:584:{'ip': '0.0.0.0', 'port': 49665}:None:8",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:584:{'ip': '::', 'port': 49665}:None:7",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '0.0.0.0', 'port': 7680}:None:47",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62600}:{'ip': '185.200.125.138', 'port': 80}:39",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62605}:{'ip': '185.200.125.152', 'port': 80}:40",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62607}:{'ip': '185.200.125.152', 'port': 80}:44",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62608}:{'ip': '185.200.125.152', 'port': 80}:41",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62609}:{'ip': '185.200.125.138', 'port': 80}:46",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62610}:{'ip': '199.232.82.172', 'port': 80}:45",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62611}:{'ip': '185.200.125.152', 'port': 80}:43",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '192.168.104.132', 'port': 62613}:{'ip': '199.232.82.172', 'port': 80}:42",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6252:{'ip': '::', 'port': 7680}:None:48",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6860:{'ip': '192.168.104.132', 'port': 56258}:{'ip': '52.123.243.181', 'port': 443}:49",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:6860:{'ip': '192.168.104.132', 'port': 62590}:{'ip': '52.123.243.181', 'port': 443}:50",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:700:{'ip': '0.0.0.0', 'port': 49669}:None:10",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:700:{'ip': '::', 'port': 49669}:None:9",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:768:{'ip': '0.0.0.0', 'port': 49664}:None:12",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:768:{'ip': '::', 'port': 49664}:None:11",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:992:{'ip': '0.0.0.0', 'port': 135}:None:13",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "network_connection:992:{'ip': '::', 'port': 135}:None:14",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "registry:HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon:AutoAdminLogon",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "registry:HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon:DefaultUserName",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "registry:HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon:Shell",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "registry:HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon:Userinit",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "service:mdcoresvc",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "service:wdnissvc",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "scheduled_task:\\microsoft\\windows\\windows defender\\windows defender cleanup",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 2,
+        "unknown_dimension_count": 4,
+        "consistent_dimension_count": 2,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "service:microsoftedgeelevationservice",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "scheduled_task:\\microsoft\\windows\\windows defender\\windows defender cache maintenance",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 2,
+        "unknown_dimension_count": 4,
+        "consistent_dimension_count": 2,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "scheduled_task:\\microsoft\\windows\\windows defender\\windows defender scheduled scan",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 2,
+        "unknown_dimension_count": 4,
+        "consistent_dimension_count": 2,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "scheduled_task:\\microsoft\\windows\\windows defender\\windows defender verification",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 2,
+        "unknown_dimension_count": 4,
+        "consistent_dimension_count": 2,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "service:windefend",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "INVALID_OR_UNAVAILABLE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "installed_application:microsoft edge:92.0.902.67",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 1
+          },
+          {
+            "dimension": "temporal",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "BEFORE"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "network",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:0",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "EXTERNAL"
+            ],
+            "record_count": 2
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:1168",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:1268",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2080",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "LOOPBACK"
+            ],
+            "record_count": 2
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2128",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 8
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2208",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "EXTERNAL"
+            ],
+            "record_count": 3
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:2452",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 2
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:3992",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "LOOPBACK",
+              "PRIVATE",
+              "LINK_LOCAL"
+            ],
+            "record_count": 10
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:4",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 10
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:5060",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:5372",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:584",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:6252",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE",
+              "EXTERNAL"
+            ],
+            "record_count": 12
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:6860",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "EXTERNAL"
+            ],
+            "record_count": 2
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:700",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:768",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:992",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "PRIVATE"
+            ],
+            "record_count": 4
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      },
+      {
+        "node_id": "process:5924",
+        "context_score": 1.0,
+        "dimension_count": 6,
+        "usable_dimension_count": 1,
+        "unknown_dimension_count": 5,
+        "consistent_dimension_count": 1,
+        "dimensions": [
+          {
+            "dimension": "network",
+            "usable": true,
+            "internally_consistent": true,
+            "states": [
+              "EXTERNAL"
+            ],
+            "record_count": 1
+          },
+          {
+            "dimension": "identity",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "trust",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "location",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "parent_child",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          },
+          {
+            "dimension": "temporal",
+            "usable": false,
+            "internally_consistent": null,
+            "states": [],
+            "record_count": 0
+          }
+        ]
+      }
+    ]
+  },
+  "sis_result": {
+    "sis": 0.8362112275086988,
+    "structural_component": 0.5362112275086988,
+    "context_component": 0.3,
+    "weights": {
+      "structural_weight": 0.7,
+      "context_weight": 0.3
+    }
+  },
+  "decision": {
+    "sis": 0.8362112275086988,
+    "status": "normal",
+    "sis_status": "normal",
+    "reasons": [
+      "SIS classified the system as normal.",
+      "Contextual evidence is available from the previous analysis stage."
+    ],
+    "context_summary": {
+      "identity": {
+        "added_nodes": 66,
+        "removed_nodes": 44,
+        "changed_nodes": 7,
+        "added_edges": 70,
+        "removed_edges": 50,
+        "total_node_changes": 117,
+        "total_edge_changes": 120,
+        "total_changes": 237
+      },
+      "trust": {
+        "added_count": 9,
+        "changed_count": 0,
+        "removed_count": 5,
+        "signature_available_count": 14,
+        "signature_not_available_count": 0
+      },
+      "location": {
+        "added_count": 66,
+        "changed_count": 7,
+        "removed_count": 44
+      },
+      "network": {
+        "added_connections": 47,
+        "removed_connections": 37,
+        "changed_connections": 0,
+        "added_relationships": 47,
+        "removed_relationships": 37,
+        "total_network_changes": 168
+      },
+      "parent_child": {
+        "added_relationships": 9,
+        "removed_relationships": 5,
+        "existing_relationships": 120,
+        "changed_parents": 0,
+        "total_relationship_changes": 14
+      },
+      "temporal": {
+        "total_changed_elements": 117,
+        "temporal_available": 20,
+        "temporal_unavailable": 97
+      }
+    },
+    "context_evidence": [
+      {
+        "dimension": "identity",
+        "indicator": "added_nodes",
+        "value": 66
+      },
+      {
+        "dimension": "identity",
+        "indicator": "removed_nodes",
+        "value": 44
+      },
+      {
+        "dimension": "identity",
+        "indicator": "changed_nodes",
+        "value": 7
+      },
+      {
+        "dimension": "identity",
+        "indicator": "added_edges",
+        "value": 70
+      },
+      {
+        "dimension": "identity",
+        "indicator": "removed_edges",
+        "value": 50
+      },
+      {
+        "dimension": "identity",
+        "indicator": "total_node_changes",
+        "value": 117
+      },
+      {
+        "dimension": "identity",
+        "indicator": "total_edge_changes",
+        "value": 120
+      },
+      {
+        "dimension": "identity",
+        "indicator": "total_changes",
+        "value": 237
+      },
+      {
+        "dimension": "trust",
+        "indicator": "added_count",
+        "value": 9
+      },
+      {
+        "dimension": "trust",
+        "indicator": "removed_count",
+        "value": 5
+      },
+      {
+        "dimension": "trust",
+        "indicator": "signature_available_count",
+        "value": 14
+      },
+      {
+        "dimension": "trust",
+        "indicator": "added",
+        "count": 9
+      },
+      {
+        "dimension": "trust",
+        "indicator": "removed",
+        "count": 5
+      },
+      {
+        "dimension": "location",
+        "indicator": "added_count",
+        "value": 66
+      },
+      {
+        "dimension": "location",
+        "indicator": "changed_count",
+        "value": 7
+      },
+      {
+        "dimension": "location",
+        "indicator": "removed_count",
+        "value": 44
+      },
+      {
+        "dimension": "location",
+        "indicator": "added",
+        "count": 66
+      },
+      {
+        "dimension": "location",
+        "indicator": "changed",
+        "count": 7
+      },
+      {
+        "dimension": "location",
+        "indicator": "removed",
+        "count": 44
+      },
+      {
+        "dimension": "network",
+        "indicator": "added_connections",
+        "value": 47
+      },
+      {
+        "dimension": "network",
+        "indicator": "removed_connections",
+        "value": 37
+      },
+      {
+        "dimension": "network",
+        "indicator": "added_relationships",
+        "value": 47
+      },
+      {
+        "dimension": "network",
+        "indicator": "removed_relationships",
+        "value": 37
+      },
+      {
+        "dimension": "network",
+        "indicator": "total_network_changes",
+        "value": 168
+      },
+      {
+        "dimension": "network",
+        "indicator": "added_connections",
+        "count": 47
+      },
+      {
+        "dimension": "network",
+        "indicator": "removed_connections",
+        "count": 37
+      },
+      {
+        "dimension": "network",
+        "indicator": "added_relationships",
+        "count": 47
+      },
+      {
+        "dimension": "network",
+        "indicator": "removed_relationships",
+        "count": 37
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "added_relationships",
+        "value": 9
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "removed_relationships",
+        "value": 5
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "existing_relationships",
+        "value": 120
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "total_relationship_changes",
+        "value": 14
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "added_relationships",
+        "count": 9
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "removed_relationships",
+        "count": 5
+      },
+      {
+        "dimension": "parent_child",
+        "indicator": "existing_relationships",
+        "count": 120
+      },
+      {
+        "dimension": "temporal",
+        "indicator": "total_changed_elements",
+        "value": 117
+      },
+      {
+        "dimension": "temporal",
+        "indicator": "temporal_available",
+        "value": 20
+      },
+      {
+        "dimension": "temporal",
+        "indicator": "temporal_unavailable",
+        "value": 97
+      },
+      {
+        "dimension": "temporal",
+        "indicator": "records",
+        "count": 117
+      }
+    ],
+    "decision_method": "threshold_rules"
+  }
+}
