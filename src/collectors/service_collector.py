@@ -15,13 +15,13 @@ import psutil
 
 def _get_service_information(
     service: Any,
-) -> dict[str, Any] | None:
+) -> tuple[dict[str, Any] | None, dict[str, str] | None]:
     """
     Collect and normalize information about a single Windows service.
 
     Returns:
-        A normalized service record, or None if the service
-        cannot be accessed.
+        A tuple containing the service record and an optional error.
+        Services that disappear during collection are skipped.
     """
 
     try:
@@ -36,26 +36,30 @@ def _get_service_information(
             "start_type": information.get("start_type"),
             "description": information.get("description"),
             "binpath": information.get("binpath"),
-            "dependencies": information.get(
-                "dependencies"
-            ),
+            "dependencies": information.get("dependencies"),
+        }, None
+
+    except psutil.AccessDenied as exc:
+        return None, {
+            "component": "service",
+            "error_type": type(exc).__name__,
+            "message": str(exc),
         }
 
     except (
         psutil.NoSuchProcess,
-        psutil.AccessDenied,
         psutil.ZombieProcess,
     ):
-        return None
+        return None, None
 
 
 def collect_services() -> dict[str, Any]:
     """
-    Collect accessible Windows services.
+    Collect Windows service information.
 
     Returns:
         A structured dictionary containing collection metadata,
-        the number of collected services, and service records.
+        service records, collection status, and any errors.
     """
 
     collected_at = datetime.now(
@@ -63,25 +67,35 @@ def collect_services() -> dict[str, Any]:
     ).isoformat()
 
     services: list[dict[str, Any]] = []
+    errors: list[dict[str, str]] = []
+    enumeration_completed = False
 
     try:
         service_iterator = psutil.win_service_iter()
 
         for service in service_iterator:
-            service_information = (
+            service_information, service_error = (
                 _get_service_information(service)
             )
 
             if service_information is not None:
-                services.append(
-                    service_information
-                )
+                services.append(service_information)
+
+            if service_error is not None:
+                errors.append(service_error)
+
+        enumeration_completed = True
 
     except (
         psutil.NoSuchProcess,
         psutil.AccessDenied,
-    ):
-        pass
+        psutil.ZombieProcess,
+    ) as exc:
+        errors.append({
+            "component": "service_enumeration",
+            "error_type": type(exc).__name__,
+            "message": str(exc),
+        })
 
     services.sort(
         key=lambda item: (
@@ -89,10 +103,19 @@ def collect_services() -> dict[str, Any]:
         ).lower()
     )
 
+    if not errors:
+        status = "success"
+    elif services:
+        status = "partial"
+    else:
+        status = "error"
+
     return {
         "collector": "service_collector",
         "entity_type": "service",
         "collected_at": collected_at,
         "count": len(services),
         "items": services,
+        "status": status,
+        "errors": errors,
     }

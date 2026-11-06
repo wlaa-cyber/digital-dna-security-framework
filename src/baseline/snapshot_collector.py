@@ -185,7 +185,13 @@ def collect_snapshot() -> dict[str, Any]:
     successful = [
         name
         for name, result in collectors.items()
-        if result.get("status", "success") != "error"
+        if result.get("status", "success") == "success"
+    ]
+
+    partial = [
+        name
+        for name, result in collectors.items()
+        if result.get("status") == "partial"
     ]
 
     failed = [
@@ -200,6 +206,7 @@ def collect_snapshot() -> dict[str, Any]:
             "collected_at": collected_at,
             "collector_count": len(collectors),
             "successful_collectors": successful,
+            "partial_collectors": partial,
             "failed_collectors": failed,
         },
         "collectors": collectors,

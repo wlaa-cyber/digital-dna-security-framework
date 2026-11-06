@@ -51,25 +51,42 @@ def _format_connection_type(
     return str(connection_type)
 
 
-def _get_interfaces() -> list[dict[str, Any]]:
+def _get_interfaces() -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, str]],
+    bool,
+]:
     """
-    Collect information about available network interfaces.
+    Collect network interfaces and report collection errors.
 
     Returns:
-        A sorted list containing network interface information.
+        (interfaces, errors, source_available)
     """
 
     interfaces: list[dict[str, Any]] = []
+    errors: list[dict[str, str]] = []
 
     try:
         addresses = psutil.net_if_addrs()
+
+    except (psutil.AccessDenied, OSError) as error:
+        errors.append({
+            "component": "interfaces.addresses",
+            "error_type": type(error).__name__,
+            "message": str(error),
+        })
+        return interfaces, errors, False
+
+    try:
         statistics = psutil.net_if_stats()
 
-    except (
-        psutil.AccessDenied,
-        OSError,
-    ):
-        return interfaces
+    except (psutil.AccessDenied, OSError) as error:
+        statistics = {}
+        errors.append({
+            "component": "interfaces.statistics",
+            "error_type": type(error).__name__,
+            "message": str(error),
+        })
 
     for interface_name, interface_addresses in addresses.items():
         stats = statistics.get(interface_name)
@@ -83,36 +100,31 @@ def _get_interfaces() -> list[dict[str, Any]]:
         }
 
         for address in interface_addresses:
-            interface_information[
-                "addresses"
-            ].append(
-                {
-                    "family": _format_address_family(
-                        address.family
-                    ),
-                    "address": address.address,
-                    "netmask": address.netmask,
-                    "broadcast": address.broadcast,
-                }
-            )
+            interface_information["addresses"].append({
+                "family": _format_address_family(address.family),
+                "address": address.address,
+                "netmask": address.netmask,
+                "broadcast": address.broadcast,
+            })
 
-        interfaces.append(
-            interface_information
-        )
+        interfaces.append(interface_information)
 
     interfaces.sort(
         key=lambda item: item["name"].lower()
     )
 
-    return interfaces
+    return interfaces, errors, True
 
-
-def _get_connections() -> list[dict[str, Any]]:
+def _get_connections() -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, str]],
+    bool,
+]:
     """
-    Collect active Internet protocol connections.
+    Collect network connections and report collection errors.
 
     Returns:
-        A sorted list containing network connection information.
+        (connections, errors, source_available)
     """
 
     connections: list[dict[str, Any]] = []
@@ -122,11 +134,12 @@ def _get_connections() -> list[dict[str, Any]]:
             kind="inet"
         )
 
-    except (
-        psutil.AccessDenied,
-        OSError,
-    ):
-        return connections
+    except (psutil.AccessDenied, OSError) as error:
+        return connections, [{
+            "component": "connections",
+            "error_type": type(error).__name__,
+            "message": str(error),
+        }], False
 
     for connection in network_connections:
         local_address = None
@@ -144,48 +157,54 @@ def _get_connections() -> list[dict[str, Any]]:
                 "port": connection.raddr.port,
             }
 
-        connections.append(
-            {
-                "family": _format_address_family(
-                    connection.family
-                ),
-                "protocol": _format_connection_type(
-                    connection.type
-                ),
-                "status": connection.status,
-                "local_address": local_address,
-                "remote_address": remote_address,
-                "pid": connection.pid,
-            }
-        )
+        connections.append({
+            "family": _format_address_family(connection.family),
+            "protocol": _format_connection_type(connection.type),
+            "status": connection.status,
+            "local_address": local_address,
+            "remote_address": remote_address,
+            "pid": connection.pid,
+        })
 
     connections.sort(
         key=lambda item: (
-            item["pid"]
-            if item["pid"] is not None
-            else -1,
+            item["pid"] if item["pid"] is not None else -1,
             item["status"] or "",
         )
     )
 
-    return connections
-
+    return connections, [], True
 
 def collect_network() -> dict[str, Any]:
     """
     Collect network information from Windows.
 
-    Returns:
-        A structured dictionary containing collection metadata
-        and network information.
+    Preserves successfully collected data and reports
+    partial or complete collection failures.
     """
 
     collected_at = datetime.now(
         timezone.utc
     ).isoformat()
 
-    interfaces = _get_interfaces()
-    connections = _get_connections()
+    interfaces, interface_errors, interfaces_available = (
+        _get_interfaces()
+    )
+
+    connections, connection_errors, connections_available = (
+        _get_connections()
+    )
+
+    errors = interface_errors + connection_errors
+
+    if not errors:
+        status = "success"
+
+    elif interfaces_available or connections_available:
+        status = "partial"
+
+    else:
+        status = "error"
 
     items = {
         "interfaces": interfaces,
@@ -199,4 +218,6 @@ def collect_network() -> dict[str, Any]:
         "interface_count": len(interfaces),
         "connection_count": len(connections),
         "items": items,
+        "status": status,
+        "errors": errors,
     }

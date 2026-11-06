@@ -50,54 +50,54 @@ def _get_registry_values(
     hive: Any,
     hive_name: str,
     path: str,
+    errors: list[dict[str, str]] | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    Collect all values from a selected Registry key.
-
-    Returns:
-        A list of normalized Registry value records.
-    """
+    """Collect Registry values and record access/read failures."""
 
     values: list[dict[str, Any]] = []
 
-    try:
-        key = winreg.OpenKey(
-            hive,
-            path,
-            0,
-            winreg.KEY_READ,
-        )
+    if errors is None:
+        errors = []
 
-    except (
-        FileNotFoundError,
-        PermissionError,
-        OSError,
-    ):
+    try:
+        key = winreg.OpenKey(hive, path, 0, winreg.KEY_READ)
+    except FileNotFoundError:
+        return values
+    except OSError as exc:
+        errors.append({
+            "component": f"{hive_name}\\{path}",
+            "error_type": type(exc).__name__,
+            "message": str(exc),
+        })
         return values
 
     try:
-        value_count = winreg.QueryInfoKey(key)[1]
+        try:
+            value_count = winreg.QueryInfoKey(key)[1]
+        except OSError as exc:
+            errors.append({
+                "component": f"{hive_name}\\{path}",
+                "error_type": type(exc).__name__,
+                "message": str(exc),
+            })
+            return values
 
         for index in range(value_count):
             try:
-                name, value, value_type = winreg.EnumValue(
-                    key,
-                    index,
-                )
-
-                values.append(
-                    {
-                        "hive": hive_name,
-                        "path": path,
-                        "name": name,
-                        "value": value,
-                        "type": value_type,
-                    }
-                )
-
-            except OSError:
-                continue
-
+                name, value, value_type = winreg.EnumValue(key, index)
+                values.append({
+                    "hive": hive_name,
+                    "path": path,
+                    "name": name,
+                    "value": value,
+                    "type": value_type,
+                })
+            except OSError as exc:
+                errors.append({
+                    "component": f"{hive_name}\\{path}\\value[{index}]",
+                    "error_type": type(exc).__name__,
+                    "message": str(exc),
+                })
     finally:
         winreg.CloseKey(key)
 
@@ -107,14 +107,9 @@ def _get_registry_values(
 def _get_selected_winlogon_values(
     hive: Any,
     hive_name: str,
+    errors: list[dict[str, str]] | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    Collect selected security-relevant Winlogon values.
-
-    Only values related to shell execution, user initialization,
-    automatic logon, and the configured default username are
-    collected.
-    """
+    """Collect selected Winlogon values and record access/read failures."""
 
     path = (
         r"Software\Microsoft\Windows NT"
@@ -123,47 +118,52 @@ def _get_selected_winlogon_values(
 
     values: list[dict[str, Any]] = []
 
-    try:
-        key = winreg.OpenKey(
-            hive,
-            path,
-            0,
-            winreg.KEY_READ,
-        )
+    if errors is None:
+        errors = []
 
-    except (
-        FileNotFoundError,
-        PermissionError,
-        OSError,
-    ):
+    try:
+        key = winreg.OpenKey(hive, path, 0, winreg.KEY_READ)
+    except FileNotFoundError:
+        return values
+    except OSError as exc:
+        errors.append({
+            "component": f"{hive_name}\\{path}",
+            "error_type": type(exc).__name__,
+            "message": str(exc),
+        })
         return values
 
     try:
-        value_count = winreg.QueryInfoKey(key)[1]
+        try:
+            value_count = winreg.QueryInfoKey(key)[1]
+        except OSError as exc:
+            errors.append({
+                "component": f"{hive_name}\\{path}",
+                "error_type": type(exc).__name__,
+                "message": str(exc),
+            })
+            return values
 
         for index in range(value_count):
             try:
-                name, value, value_type = winreg.EnumValue(
-                    key,
-                    index,
-                )
+                name, value, value_type = winreg.EnumValue(key, index)
 
                 if name not in WINLOGON_VALUES:
                     continue
 
-                values.append(
-                    {
-                        "hive": hive_name,
-                        "path": path,
-                        "name": name,
-                        "value": value,
-                        "type": value_type,
-                    }
-                )
-
-            except OSError:
-                continue
-
+                values.append({
+                    "hive": hive_name,
+                    "path": path,
+                    "name": name,
+                    "value": value,
+                    "type": value_type,
+                })
+            except OSError as exc:
+                errors.append({
+                    "component": f"{hive_name}\\{path}\\value[{index}]",
+                    "error_type": type(exc).__name__,
+                    "message": str(exc),
+                })
     finally:
         winreg.CloseKey(key)
 
@@ -173,14 +173,7 @@ def _get_selected_winlogon_values(
 def collect_registry() -> dict[str, Any]:
     """
     Collect selected Windows Registry persistence locations.
-
-    The collector focuses on Run, RunOnce, and selected
-    security-relevant Winlogon values instead of scanning
-    the entire Registry.
-
-    Returns:
-        A structured dictionary containing collection metadata,
-        the number of collected values, and Registry records.
+    Missing Registry keys are normal; access/read failures are reported.
     """
 
     collected_at = datetime.now(
@@ -188,22 +181,23 @@ def collect_registry() -> dict[str, Any]:
     ).isoformat()
 
     values: list[dict[str, Any]] = []
+    errors: list[dict[str, str]] = []
 
-    # Collect Run and RunOnce locations.
     for location in REGISTRY_LOCATIONS:
         values.extend(
             _get_registry_values(
                 hive=location["hive"],
                 hive_name=location["hive_name"],
                 path=location["path"],
+                errors=errors,
             )
         )
 
-    # Collect selected Winlogon values.
     values.extend(
         _get_selected_winlogon_values(
             hive=winreg.HKEY_CURRENT_USER,
             hive_name="HKCU",
+            errors=errors,
         )
     )
 
@@ -211,6 +205,7 @@ def collect_registry() -> dict[str, Any]:
         _get_selected_winlogon_values(
             hive=winreg.HKEY_LOCAL_MACHINE,
             hive_name="HKLM",
+            errors=errors,
         )
     )
 
@@ -222,10 +217,19 @@ def collect_registry() -> dict[str, Any]:
         )
     )
 
+    if not errors:
+        status = "success"
+    elif values:
+        status = "partial"
+    else:
+        status = "error"
+
     return {
         "collector": "registry_collector",
         "entity_type": "registry_value",
         "collected_at": collected_at,
         "count": len(values),
         "items": values,
+        "status": status,
+        "errors": errors,
     }

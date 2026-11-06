@@ -9,6 +9,8 @@ Digital DNA Security Framework.
 """
 
 from typing import Any
+import hashlib
+import json
 
 
 def _normalize_address_family(value: Any) -> Any:
@@ -344,29 +346,76 @@ def _normalize_network_interfaces(
     return entities
 
 
+
 def _normalize_network_connections(
     connections: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
     """
     Normalize network connection records into unified entities.
+
+    Entity IDs are deterministic and independent of input ordering.
+    Duplicate connections are distinguished using a stable ordinal.
     """
 
-    entities = []
+    normalized_records = []
 
-    for index, connection in enumerate(connections):
+    for connection in connections:
         normalized_connection = _normalize_protocol(connection)
 
         normalized_connection["family"] = _normalize_address_family(
             normalized_connection.get("family")
         )
 
+        identity = {
+            "pid": normalized_connection.get("pid"),
+            "family": normalized_connection.get("family"),
+            "protocol": normalized_connection.get("protocol"),
+            "local_address": normalized_connection.get("local_address"),
+            "remote_address": normalized_connection.get("remote_address"),
+        }
+
+        identity_key = json.dumps(
+            identity,
+            sort_keys=True,
+            separators=(",", ":"),
+            ensure_ascii=True,
+            default=str,
+        )
+
+        properties_key = json.dumps(
+            normalized_connection,
+            sort_keys=True,
+            separators=(",", ":"),
+            ensure_ascii=True,
+            default=str,
+        )
+
+        normalized_records.append(
+            (identity_key, properties_key, normalized_connection)
+        )
+
+    # Sorting ensures that duplicate records with differing properties
+    # receive their ordinals consistently, regardless of input order.
+    normalized_records.sort(
+        key=lambda record: (record[0], record[1])
+    )
+
+    entities = []
+    duplicate_counts: dict[str, int] = {}
+
+    for identity_key, properties_key, normalized_connection in normalized_records:
+        duplicate_index = duplicate_counts.get(identity_key, 0)
+        duplicate_counts[identity_key] = duplicate_index + 1
+
+        identity_digest = hashlib.sha256(
+            identity_key.encode("utf-8")
+        ).hexdigest()[:20]
+
         pid = normalized_connection.get("pid")
-        local_address = normalized_connection.get("local_address")
-        remote_address = normalized_connection.get("remote_address")
 
         entity_id = (
             f"network_connection:{pid}:"
-            f"{local_address}:{remote_address}:{index}"
+            f"{identity_digest}:{duplicate_index}"
         )
 
         entity = _create_entity(

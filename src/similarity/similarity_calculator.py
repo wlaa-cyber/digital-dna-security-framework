@@ -1,3 +1,5 @@
+import math
+
 """
 Similarity Calculation Engine
 -----------------------------
@@ -132,13 +134,29 @@ def calculate_structural_similarity(
     security or anomaly decision.
     """
 
-    if node_weight < 0 or edge_weight < 0:
-        raise ValueError(
-            "Similarity weights cannot be negative."
-        )
+    for weight, name in (
+        (node_weight, "node_weight"),
+        (edge_weight, "edge_weight"),
+    ):
+        if isinstance(weight, bool) or not isinstance(
+            weight, (int, float)
+        ):
+            raise TypeError(
+                f"{name} must be numeric."
+            )
+
+        if not math.isfinite(float(weight)):
+            raise ValueError(
+                f"{name} must be finite."
+            )
+
+        if float(weight) < 0.0:
+            raise ValueError(
+                f"{name} cannot be negative."
+            )
 
     if abs(
-        (node_weight + edge_weight) - 1.0
+        (float(node_weight) + float(edge_weight)) - 1.0
     ) > 1e-9:
         raise ValueError(
             "Node and edge weights must sum to 1.0."
